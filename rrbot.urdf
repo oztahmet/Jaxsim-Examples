@@ -36,9 +36,6 @@
       <inertia ixx="1000.0" ixy="0.0" ixz="0.0" iyy="1000.0" iyz="0.0" izz="1000.0"/>
     </inertial>
   </link>
-  <gazebo reference="world">
-    <static>true</static>
-  </gazebo>
   <joint name="RRbot_fixed" type="fixed">
     <origin rpy="0 0 0" xyz="0 0 0"/>
     <parent link="world"/>
