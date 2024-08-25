@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- =================================================================================== -->
-<!-- |    This file was generated from rrbot_description (Gazebo RRBot full example)   | -->
-<!-- =================================================================================== -->
 <robot name="RRbot">
   <!-- Import your models -->
   <material name="RRBOT/black">
