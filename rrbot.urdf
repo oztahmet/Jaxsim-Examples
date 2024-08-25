@@ -1,8 +1,8 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- =================================================================================== -->
 <!-- |    This file was generated from rrbot_description (Gazebo RRBot full example)   | -->
 <!-- =================================================================================== -->
-<robot name="RRbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="RRbot">
   <!-- Import your models -->
   <material name="RRBOT/black">
     <color rgba="0.0 0.0 0.0 1.0"/>
