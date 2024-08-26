@@ -34,7 +34,7 @@
     <joint name="rr_bot_joint1" type="revolute">
         <parent link="rr_bot_link1"/>
         <child link="rr_bot_link2"/>
-        <origin rpy="0 0 0" xyz="0 0.1 1.95"/>
+        <origin xyz="0.0 0.1 1.95" rpy="0.0 0.0 0.0"/>
         <axis xyz="0 1 0"/>
     </joint>
 </robot>
