@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="rr_bot">
+    <link name="world">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <mass value="1000"/>
+            <inertia ixx="1000.0" ixy="0.0" ixz="0.0" iyy="1000.0" iyz="0.0" izz="1000.0"/>
+        </inertial>
+    </link>
+</robot>
