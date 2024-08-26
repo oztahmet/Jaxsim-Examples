@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="rr_bot">
+    <link name="world">
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <mass value="1000"/>
+            <inertia ixx="1000.0" ixy="0.0" ixz="0.0" iyy="1000.0" iyz="0.0" izz="1000.0"/>
+        </inertial>
+    </link>
+    <joint name="rr_bot_fixed" type="fixed">
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <parent link="world"/>
+        <child link="rr_bot_link1"/>
+    </joint>
+    <link name="rr_bot_link1">
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 1.0"/>
+            <geometry>
+                <box size="0.1 0.1 2"/>
+            </geometry>
+        </collision>
+        <visual name="rr_bot_link1_visual">
+            <origin rpy="0 0 0" xyz="0 0 1.0"/>
+            <geometry>
+                <box size="0.1 0.1 2"/>
+            </geometry>
+        </visual>
+        <inertial>
+            <origin rpy="0 0 0" xyz="0 0 1.0"/>
+            <mass value="1"/>
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
+    </link>
+    <joint name="rr_bot_joint1" type="revolute">
+        <parent link="rr_bot_link1"/>
+        <child link="rr_bot_link2"/>
+        <origin xyz="0.0 0.1 1.95" rpy="0.0 0.0 0.0"/>
+        <axis xyz="0 1 0"/>
+    </joint>
+</robot>
