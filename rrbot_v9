@@ -45,4 +45,16 @@
             </geometry>
         </collision>
     </link>
+    <joint name="world_to_rr_bot_link1" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="world"/>
+        <child link="rr_bot_link1"/>
+    </joint>
+    <joint name="rr_bot_link1_to_rr_bot_link2" type="revolute">
+        <origin xyz="0.0 0.1 1.95" rpy="0.0 0.0 0.0"/>
+        <parent link="rr_bot_link1"/>
+        <child link="rr_bot_link2"/>
+        <axis xyz="0 1 0"/>
+        <limit effort="500.0" velocity="10.0" lower="-2.4" upper="2.4"/>
+    </joint>
 </robot>
