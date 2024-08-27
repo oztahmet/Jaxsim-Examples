@@ -75,6 +75,7 @@
         <child link="rr_bot_link2"/>
         <axis xyz="0 1 0"/>
         <limit effort="500.0" velocity="10.0" lower="-2.4" upper="2.4"/>
+        <dynamics damping="0.7"/>
     </joint>
     <joint name="rr_bot_link2_to_rr_bot_link3" type="revolute">
         <origin xyz="0.0 0.1 0.9" rpy="0.0 0.0 0.0"/>
@@ -82,5 +83,6 @@
         <child link="rr_bot_link3"/>
         <axis xyz="0 1 0"/>
         <limit effort="500.0" velocity="10.0" lower="-2.4" upper="2.4"/>
+        <dynamics damping="0.7"/>
     </joint>
 </robot>
