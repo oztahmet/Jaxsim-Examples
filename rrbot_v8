@@ -40,7 +40,7 @@
         </visual>
         <collision name="rr_bot_link2_collision">
             <origin rpy="0 0 0" xyz="0 0 0.45"/>
-              <geometry>
+            <geometry>
                 <box size="0.1 0.1 1"/>
             </geometry>
         </collision>
