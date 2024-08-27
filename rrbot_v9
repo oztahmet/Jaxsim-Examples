@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Create with rod using build_cartpole_model.py -->
+<robot name="cartpole">
+    <link name="world"/>
+        <inertial>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="100.0"/>
+            <inertia ixx="10.416697916666665" ixy="0.0" ixz="0.0" iyy="10.416697916666665" iyz="0.0" izz="10.416697916666665"/>
+        </inertial>
+    <link name="rr_bot_link1">
+        <inertial>
+            <origin xyz="0.0 0.0 1.0" rpy="0.0 0.0 0.0"/>
+            <mass value="1.0"/>
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
+        <visual name="rr_bot_link1_visual">
+            <origin xyz="0.0 0.0 1.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.1 0.1 2.0"/>
+            </geometry>
+        </visual>
+        <collision name="rr_bot_link1_collision">
+            <origin xyz="0.0 0.0 1.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.1 0.1 2.0"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="rr_bot_link2">
+        <inertial>
+            <origin xyz="0.0 0.0 0.45" rpy="0.0 0.0 0.0"/>
+            <mass value="1.0"/>
+            <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+        </inertial>
+        <visual name="rr_bot_link2_visual">
+            <origin xyz="0.0 0.0 0.45" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.1 0.1 1.0"/>
+            </geometry>
+        </visual>
+        <collision name="rr_bot_link2_collision">
+            <origin xyz="0.0 0.0 0.45" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.1 0.1 1.0"/>
+            </geometry>
+        </collision>
+    </link>
+</robot>
